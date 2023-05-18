@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO1</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+    <form onsubmit="valor()">
+        <h1>Digite una palabra</h1>
+        <input placeholder="Ecribe algo aquí" type="text" id="pl1" class="palabra">
+        <h1>Escoga que quiere hacer con la palabra que digitaron:</h1>
+        <select id="lista" name="lista">
+            <option>Elige una opción</option>
+            <option id="lp" value="lp">Longitud de la palabra</option>
+            <option value="cpm">Convertir la palabras en mayusculas</option>
+            <option value="cpmn">Convertir la palabra en minusculas</option>
+            <option value="pc">Seleccionar el primer caracter de la palabra</option>
+        </select>
+        <input type="submit" value="enviar">
+    </form>
+    <script type="text/javascript" src="reto1.js"></script>
+</body>
+</html>

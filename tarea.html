@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <table>
+            <tr>
+                <th>Evento</th>
+                <th >Descripción</th>
+                <th >Ejecución</th>
+            </tr>
+            <tr>
+                <td class="tdt">Onchange</td>
+                <td class="tdc">El evento onchange se produce cuando el valor de un elemento se ha cambiado. Sirve para botones de radio y casillas de verificación.</td>
+                <td class="tde"><input type="text" placeholder="ONCHANGE" id="fname"><input type="submit" ></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onclick</td>
+                <td class="tdc">El evento onclick se produce cuando el usuario ace click sobre un elemento</td>
+                <td class="tde"><p id="demo">Haz click aquí</p></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onfocus</td>
+                <td class="tdc">El evento onfocus se produce cuando un elemento recibe el foco.</td>
+                <td class="tde"><input type="text" placeholder="Pon el mouse aquí" id="name"></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onsubmit</td>
+                <td class="tdc">El evento onsubmit se produce cuando se envía un formulario</td>
+                <td class="tde"><form id="myForm"><input type="text" placeholder="Escribe algo"><input type="submit" value="Enviar"></form></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onunload</td>
+                <td class="tdc">El evento onsubmit se produce una vez que la pagina ha descargado, también cuando el usuario se desplaza fuera de la página,depende de la configuración del navegador para que funcione</td>
+                <td class="tde"><input type="submit" onunload="ofunction()"></td>
+            </tr>
+            <tr>
+                <td class="tdt">Ondbclick</td>
+                <td class="tdc">El evento ondbclick se produce cuando el usuario hace doble click sobre un elemento</td>
+                <td class="tde"><input type="submit" value="Haz click dos veces" id="click"></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onreset</td>
+                <td class="tdc">El evento onreset se produce cuando una forma es puesta a cero.</td>
+                <td class="tde"><form id="Form"><input type="text" placeholder="Escribe algo"><input type="reset" value="Enviar" id="reset"></form></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onkeyup</td>
+                <td class="tdc">El evento onkeyup se produce cuando el usuario suelta una tecla</td>
+                <td class="tde"><input type="text" placeholder="Escribe algo" id="oku"></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onselect</td>
+                <td class="tdc">El evento onselect se produce después de algún texto ha sido seleccionado en un elemento.</td>
+                <td class="tde"><input type="text" value="Subraya este texto" id="myText"></td>
+            </tr>
+            <tr>
+                <td class="tdt">Onkeypress</td>
+                <td class="tdc">El evento onkeypress se produce cuando el usuario pulsa una tecla (No dispara todas la claves, ALT, CTRL,SHIFT,CES), el orden entre eventos es; onkeydown,onkeypress,onkeyup</td>
+                <td class="tde"><input type="text" placeholder="Presiona una clave" id="okp"></form></td>
+            </tr>
+
+        </table>
+    <script type="text/javascript" src="tarea.js" ></script>
+</body>
+</html>

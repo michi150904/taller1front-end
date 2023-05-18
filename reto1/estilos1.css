@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+form{
+    background: rgba(235, 189, 196, 0.855);
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top:10%;
+    border-radius: 9px;
+    
+}
+h1{
+    text-align: center;
+    padding: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    padding: 0px 100px;
+    margin: 0px 60px;
+    background-color: rgba(238, 36, 106, 0.571);
+    border: none;
+}
+select{
+    padding: 0px 45px;
+    margin: 0px 60px;
+    margin-bottom: 35px;
+    background-color: rgba(238, 36, 106, 0.571);
+    border: none;
+
+}

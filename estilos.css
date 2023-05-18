@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+table{
+    border-spacing: 0 0;
+    width: 800px;
+    height: 800px;
+    margin: 15px 280px;
+
+}
+th{
+    border: solid 1px black;
+    width: auto;
+    text-align: center;
+    background: rgba(198, 160, 246, 0.78);
+}
+.tdt{
+    border: solid 1px black;
+    width: 100px;
+    text-align: center;
+    background: rgba(225, 208, 245, 0.78);
+
+
+}
+.tdc{
+    border: solid 1px black;
+    width: 550px;
+    text-align: center;
+    padding: 5px 5px;
+    background: rgba(225, 208, 245, 0.78);
+
+
+}
+.tde{
+    border: solid 1px black;
+    width: 150px;
+    text-align: center;
+    padding: 5px 5px;
+    background: rgba(225, 208, 245, 0.78);
+
+}
+input{
+    width: 80%;
+    margin: 2px;
+    background: rgba(144, 144, 254, 0.479);
+    border: none;
+}
