@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO 2</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <form onsubmit="convertir()">
+        <h1>Digite la temperatura que quiere convertir</h1>
+        <input type="number" id="ntmp" placeholder="Digita la temperatura" required>
+            <h1>Vas a convertir de: </h1>
+            <select name="conva" id="conva">
+                <option value="cels">Celsius C°</option>
+                <option value="farh">Fahrenheit F°</option>
+                <option value="kel">Kelvin k° </option>
+            </select>
+        <h1>Deseas convertir a: </h1>
+            <select name="dscnv" id="dscnv">
+                <option value="celsd">Celsius C°</option>
+                <option value="farhd">Fahrenheit F°</option>
+                <option value="keld">Kelvin k° </option>
+            </select>
+        <input type="submit" value="Enviar">
+    </form>
+    <script type="text/javascript" src="reto2.js" ></script>
+</body>
+</html>
