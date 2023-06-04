@@ -21,3 +21,42 @@ function cerrar (e){
 // reglas de validacion
 const numdoc=/^[0-9]{5,10}/
 const nomap=/^[a-zA-Z0-9]*$/
+//campos vacios
+let form=document.getElementById("formulario");//acceso al formulario
+let fetipo=document.querySelector('#tipodoc .feedback');
+let fenum=document.querySelector('#numero .feedback');
+let fenom=document.querySelector('#nombre .feedback');
+let fetap=document.querySelector('#apellido .feedback');
+let fetfech=document.querySelector('#fecha .feedback');
+let fetcor=document.querySelector('#correo .feedback');
+let fetpass=document.querySelector('#password .feedback');
+let fetpass2=document.querySelector('#password2 .feedback');
+let fetter=document.querySelector('#terminos .feedback');
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    const tipodoc=form.tipodoc.value;
+    const num=form.numero.value;
+    const nom=form.nombre.value;
+    const apellido=form.apellido.value;
+    const fecha=form.fecha.value;
+    const correo=form.correo.value;
+    const password=form.password.value;
+    const password2=form.password2.value;
+    const terminos=form.terminos.value;
+    if (tipodoc==null | tipodoc==0){
+        form.tipodoc.setAttribute("class","error");
+        fetipo.textContent="Campo vacio, selecciona un tipo de documento";
+        fetipo.style.setProperty("visibility", "visible");
+        fetipo.style.setProperty("opacity", "1");
+        form.tipodoc.focus(); 
+    }
+    else if (numero==null | numero==0){
+        form.numero.setAttribute("class","error")
+        fenum.textContent="Campo vacio, digita tu número de celular"
+        fenum.style.setProperty("visibility", "visible");
+        fenum.style.setProperty("opacity", "1");
+        form.numero.focus();
+    }
+
+})

@@ -12,7 +12,7 @@
     <form action="" id="formulario" novalidate>
         <h1>Formulario</h1>
         <div id="tipodoc">
-            <label for="tipdoc">tipo documento</label>
+            <label for="tip">tipo documento</label>
             <select name="tipodoc" id="tipodoc">
                 <option value="0">Seleccione un tipo de documento</option>
                 <option value="1">Tarjeta de identidad</option>
@@ -36,7 +36,7 @@
             <input type="text" name="apellido" id="apellido">
             <div class="feedback"></div>
         </div>
-        <div id="fechaNam">
+        <div id="fecha">
             <label for="Fechanam">Fecha de Nacimiento</label>
             <input type="date" name="fecha" id="fecha">
             <div class="feedback"></div>
@@ -57,13 +57,13 @@
             <div class="feedback"></div>
         </div>
         <div id="terminos de uso">
-            <label for="password2">¿Acepta los términos de uso?</label>
+            <label for="terminos">¿Acepta los términos de uso?</label>
             <input type="checkbox" name="terminos" id="terminos">
             <input type="submit" id="abrirModal" value="Terminos de uso">
 
             <div class="feedback"></div>
         </div>
-        <button>enviar</button>
+        <button type="submit">enviar</button>
     </form>
 
         <div id="modal" class="modal" onclick="cerrar(event)">
