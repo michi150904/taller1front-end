@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+price=10000;
+op=1;
+while(op):
+    edad=int(input("Digite la edad de la persona"));
+    if edad>=5 and edad<=14:
+        desc=price*0.35;
+        total=price-desc;
+        print (f"El total de la boleta es: {total}")
+
+
+
+=======
 function convertir(){
     let number=document.getElementById("ntmp").value;
     let listConv=document.getElementById("conva").value;
@@ -44,3 +57,4 @@ function convertir(){
     
 
 }
+>>>>>>> 6fdab7715705a94ed8f88916415d933f33ab0a1c
