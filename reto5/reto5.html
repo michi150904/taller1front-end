@@ -17,28 +17,138 @@
                 <button id="abrirModalPC">Perimetro</button>
                 <button id="abrirModalAC">Aréa</button>
             </div>
-            <div id="modalPC" class="modal" onclick="cerrar()">
-                <div class="contenidoModal">
-                    <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
-                </div>
-            </div>
         </div>
         <div class="card">
             <h2>Rectangulo</h2>
             <p>Escoge si quieres calcular el perimetro o el aréa</p>
-            
+            <div class="buttonc">
+                <button id="abrirModalPR">Perimetro</button>
+                <button id="abrirModalAR">Aréa</button>
+            </div>
         </div>
         <div class="card">
             <h2>Circulo</h2>
             <p>Escoge si quieres calcular el perimetro o el aréa</p>
-            
+            <div class="buttonc">
+                <button id="abrirModalPCI">Perimetro</button>
+                <button id="abrirModalACI">Aréa</button>
+            </div>
         </div>
         <div class="card">
             <h2>Triangulo</h2>
             <p>Escoge si quieres calcular el perimetro o el aréa</p>
-            
+            <div class="buttonc">
+                <button id="abrirModalPT">Perimetro</button>
+                <button id="abrirModalAT">Aréa</button>
+            </div>
+        </div>
+        <div id="modalAC" class="modal" onclick="cerrarAC()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Aréa Cuadrado</h1>
+                    <h2>Digita el valor de un lado</h2>
+                    <input type="number" id="alrcu" name="alrcu" >
+                    <button onclick="area(event)">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <div id="modalPC" class="modal" onclick="cerrarPC()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Perimetro Cuadrado</h1>
+                    <h2>Digita el valor de un lado</h2>
+                    <input type="number" id="prlad" name="baecu" >
+                    <button onclick="perimetro(event)">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <div id="modalAR" class="modal" onclick="cerrarAR()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Aréa Rectangulo</h1>
+                    <h2>Digita el valor de la base</h2>
+                    <input type="number" id="basre" name="baecu" >
+                    <h2>Digita el valor de la altura</h2>
+                    <input type="number" id="alrec" name="alrcu">
+                    <button onclick="areaRE(event)">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <div id="modalPR" class="modal" onclick="cerrarPR()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Perimetro Rectangulo</h1>
+                    <h2>Digita el valor de un lado</h2>
+                    <input type="number" id="arlad1" name="arlad1" >
+                    <h2>Digita el valor de otro lado</h2>
+                    <input type="number" id="arlad2" name="arlad2" >
+                    <h2>Digita el valor de otro lado</h2>
+                    <input type="number" id="arlad3" name="arlad3" >
+                    <h2>Digita el valor de otro lado</h2>
+                    <input type="number" id="arlad4" name="arlad4" >
+                    <button onclick="perimetroRE(event)">Calcular</button>
+                </form>
+
+            </div>
+        </div>
+        <div id="modalACI" class="modal" onclick="cerrarACI()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Aréa Circulo</h1>
+                    <h2>Digita el valor del radio</h2>
+                    <input type="number" id="raar" name="diar" >
+                    <button onclick="areaCir(event)">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <div id="modalPCI" class="modal" onclick="cerrarPCI()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Perimetro Circulo</h1>
+                    <h2>Digita el valor del diametro</h2>
+                    <input type="number" id="diap" name="diap" >
+                    <button onclick="perimetroCI(event)">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <div id="modalAT" class="modal" onclick="cerrarAT()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Aréa Triangulo</h1>
+                    <h2>Digita el valor de la base</h2>
+                    <input type="number" id="bastr" name="baecu" >
+                    <h2>Digita el valor de la altura</h2>
+                    <input type="number" id="altr" name="alrcu">
+                    <button onclick="areaT(event)">Calcular</button>
+                </form>
+
+            </div>
+        </div>
+        <div id="modalPT" class="modal" onclick="cerrarPT()">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                <form action="">
+                    <h1>Perimetro Triangulo</h1>
+                    <h2>Digita el valor de un lado</h2>
+                    <input type="number" id="trlad1" name="arlad1" >
+                    <h2>Digita el valor de otro lado</h2>
+                    <input type="number" id="trlad2" name="arlad2" >
+                    <h2>Digita el valor de otro lado</h2>
+                    <input type="number" id="trlad3" name="arlad3" >
+                    <button onclick="perimetroT(event)">Calcular</button>
+                </form>
+
+            </div>
         </div>
 
-    </section>
+        </section>
+<script type="text/javascript" src="reto5.js"></script>
 </body>
 </html>

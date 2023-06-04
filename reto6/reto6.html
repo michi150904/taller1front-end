@@ -5,10 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto 6</title>
+    <link rel="stylesheet" href="estilos6.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form action="">
-        
+    <form action="" id="formulario" novalidate>
+        <h1>Formulario</h1>
+        <div id="tipodoc">
+            <label for="tipdoc">tipo documento</label>
+            <select name="tipodoc" id="tipodoc">
+                <option value="0">Seleccione un tipo de documento</option>
+                <option value="1">Tarjeta de identidad</option>
+                <option value="2">Cedula de ciudadania</option>
+                <option value="3">Pasaporte</option>
+            </select>
+            <div class="feedback"></div>
+        </div>
+        <div id="numero">
+            <label>Numero de documento</label>
+            <input type="text" name="numero" id="numero">
+            <div class="feedback"></div>
+        </div>
+        <div id="nombre">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <div class="feedback"></div>
+        </div>
+        <div id="apellido">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+            <div class="feedback"></div>
+        </div>
+        <div id="fechaNam">
+            <label for="Fechanam">Fecha de Nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+            <div class="feedback"></div>
+        </div>
+        <div id="correo">
+            <label for="correo">Correo Electronico</label>
+            <input type="text" name="correo" id="correo">
+            <div class="feedback"></div>
+        </div>
+        <div id="password">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+            <div class="feedback"></div>
+        </div>
+        <div id="password2">
+            <label for="password2">Confirmación de la Contraseña</label>
+            <input type="password" name="password2" id="password2">
+            <div class="feedback"></div>
+        </div>
+        <div id="terminos de uso">
+            <label for="password2">¿Acepta los términos de uso?</label>
+            <input type="checkbox" name="terminos" id="terminos">
+            <input type="submit" id="abrirModal" value="Terminos de uso">
+
+            <div class="feedback"></div>
+        </div>
+        <button>enviar</button>
     </form>
+
+        <div id="modal" class="modal" onclick="cerrar(event)">
+            <div class="contenidoModal">
+                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                    <h1>Términos de uso</h1>
+                    <p>1. ACEPTACIÓN 
+                        En el presente documento (en adelante, el “Contrato”) se establecen los términos y condiciones de Robert Half Internacional Empresa de Servicios Transitorios Limitada, con domicilio en Avenida Isidora Goyenechea 2800 Piso 15. Torre Titanium 7550-647 Las Condes, que serán de aplicación al acceso y uso por parte del Usuario de esta página web (el  “Sitio Web”). Les rogamos lean atentamente el presente Contrato. 
+                        Al acceder, consultar o utilizar el Sitio Web, los Usuarios (“Vd.”, “usted”, “Usuario”, o “usuario”) aceptan cumplir los términos y condiciones establecidos en este Contrato. En caso de que usted no acepte quedar vinculado por los presentes términos y condiciones, no podrá acceder a, ni utilizar, el Sitio Web. 
+                        Robert Half Internacional Empresa de Servicios Transitorios Limitada y sus respectivas empresas afiliadas (en conjunto, “RH”) se reservan el derecho de actualizar el presente Contrato siempre que lo consideren oportuno. En consecuencia, recomendamos al Usuario revisar periódicamente las modificaciones efectuadas al Contrato.
+                        El presente Sitio Web está dirigido exclusivamente a personas residentes en Chile. Los Usuarios residentes o domiciliados en otro país que deseen acceder y utilizar el Sitio Web, lo harán bajo su propio riesgo y responsabilidad, por lo que deberán asegurarse de que dichos accesos y/o usos cumplen con la legislación aplicable en su país.
+                        
+                        2. REQUISITOS RELATIVOS AL USUARIO
+                        El Sitio Web y los servicios relacionados con el mismo se ofrecen a los Usuarios que tengan capacidad legal para otorgar contratos legalmente vinculantes según la legislación aplicable. 
+                        Los menores no están autorizados para utilizar el Sitio Web. Si usted es menor de edad, por favor, no utilice esta web.       
+                    </p>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="reto6.js"></script>
+
 </body>
 </html>
